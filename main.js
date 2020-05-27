@@ -23,7 +23,7 @@ $(document).ready(function () {
     $('form').submit(function (event){
         event.preventDefault();
         var input_val=$('input[type="text"]').val();
-        weather_url=`http://api.openweathermap.org/data/2.5/weather?q=${input_val}&appid=5b9492dc8edd623d59a60815012a3d8f`;
+        weather_url=`https://api.openweathermap.org/data/2.5/weather?q=${input_val}&appid=5b9492dc8edd623d59a60815012a3d8f`;
         
         $.ajax({
             url: weather_url,
